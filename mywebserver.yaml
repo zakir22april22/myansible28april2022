@@ -15,6 +15,16 @@
       state: restarted 
     when: ansible_os_family =="Debian"
 
+  - name: i want to install webserver on redhat node
+    yum:
+     name: httpd
+     state: present  
+
+  - name: i want to start webserver on redhat node
+    service:
+      name: httpd
+      state: started   
+
    
    
    
