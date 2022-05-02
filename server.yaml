@@ -1,0 +1,21 @@
+---
+- hosts: mywebservers
+  become: yes
+  gather_facts: yes
+  tasks:
+  - name: i want to install webserver
+    apt:
+      name: apache2
+      state: present
+    when: ansible_os_family =="Debian"
+
+  - name: start apache2
+    service: 
+    - name: apache2
+      state: restarted
+    when: ansible_os_family =="Debian"  
+
+  
+
+
+
