@@ -3,7 +3,7 @@
   become: yes
   gather_facts: yes
   tasks:
-  - name: i want to install webserver
+  - name: i want to install webserver apache2
     apt:
       name: apache2
       state: present
@@ -11,7 +11,7 @@
 
   - name: start apache2
     service: 
-    - name: apache2
+      name: apache2
       state: restarted
     when: ansible_os_family =="Debian"  
 
