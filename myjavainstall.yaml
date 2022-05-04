@@ -1,0 +1,17 @@
+---
+- hosts: mywebservers
+  become: yes
+  tasks:
+  - name: install apache2
+    apt:
+     name: mywebpackonubuntu
+     state: present
+    when: ansible_os_family =="Debian"
+
+  - name: install webserver on red RedHat
+    yum:
+     name: mywebpackonredhat
+     state: present
+    when: ansible_os_family =="RedHat"  
+
+     
