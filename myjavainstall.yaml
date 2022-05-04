@@ -4,13 +4,13 @@
   tasks:
   - name: install apache2
     apt:
-     name: mywebpackonubuntu
+     name: "{{mywebpackonubuntu}}"
      state: present
     when: ansible_os_family =="Debian"
 
   - name: install webserver on red RedHat
     yum:
-     name: mywebpackonredhat
+     name: "{{mywebpackonredhat}}"
      state: present
     when: ansible_os_family =="RedHat"  
 
