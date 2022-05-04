@@ -1,28 +1,15 @@
 ---
 - hosts: mywebservers
   become: yes
-  gather_facts: yes
-  tasks: 
-  - name: i want to install apache2
+  tasks:
+  - name: install java on ubuntu
     apt:
-      name: "{{mywebpackonubuntu}}"
+      name: "{{myjavapackonubuntu}}"
       state: present
     when: ansible_os_family =="Debian"
 
-  - name: i want to start apache2
-    service:
-      name: "{{mywebpackonubuntu}}"
-      state: restarted 
-    when: ansible_os_family =="Debian"
-
-  - name: i want to install webserver on RedHat nodes
+  - name: install java on RedHat 
     yum:
-      name: "{{mywebpackonredhat}}"
+      name: "{{myjavapackonredhat}}"
       state: present
-    when: ansible_os_family =="RedHat"
-
-  - name: i want to start webserver
-    service:
-       name: "{{mywebpackonredhat}}"
-       state: started
     when: ansible_os_family =="RedHat"
