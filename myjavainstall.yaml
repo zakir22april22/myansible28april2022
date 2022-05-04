@@ -1,14 +1,13 @@
 ---
 - hosts: mywebservers
   become: yes
-  gether_facts: yes
-  tasks:
-  - name: install apache2
+  gather_facts: yes
+  tasks: 
+  - name: i want to install apache2
     apt:
-     name: "{{mywebpackonubuntu}}"
-     state: present
+      name: "{{mywebpackonubuntu}}"
+      state: present
     when: ansible_os_family =="Debian"
-
   - name: install webserver on red RedHat
     yum:
      name: "{{mywebpackonredhat}}"
