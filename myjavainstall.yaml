@@ -1,6 +1,7 @@
 ---
 - hosts: mywebservers
   become: yes
+  gether_facts: yes
   tasks:
   - name: install apache2
     apt:
