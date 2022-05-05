@@ -8,5 +8,8 @@
   tasks:
   - name: i want display tree
     debug: 
-     msg: "{{myvar02}}" 
+     msg: "{{myvar02}}"
+  - name: i want display wget 
+    debug: 
+     msg: "{{myvar03}}"    
     
