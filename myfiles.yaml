@@ -5,6 +5,6 @@
       state: touch
 
   - name: create folder
-    folder:
+    file:
       path: /home/ubuntu/mytestdir 
       state: directory   
