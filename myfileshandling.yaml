@@ -15,8 +15,7 @@
     template:
        src: mystaticfile.html
        dest: /var/www/html/index.html
-    notify: Restart webserver     
-
+    
 
   - name: i want to copy dynamic files into ansible nodes
     template:
