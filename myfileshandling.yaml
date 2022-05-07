@@ -21,7 +21,7 @@
     template:
        src: myindex.j2
        dest: /var/www/html/index.html
-       notify: Restart webserver
+    notify: Restart webserver
 
 
   - name: i want to download files from remote(internet) into nodes side
