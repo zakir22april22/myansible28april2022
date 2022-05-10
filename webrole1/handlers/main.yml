@@ -2,7 +2,7 @@
 # handlers file for webrole1
 - name: restartedwebserver
   service:
-     name: apache2
+     name: "{{myubuntuvar}}"
      state: restarted
 
 

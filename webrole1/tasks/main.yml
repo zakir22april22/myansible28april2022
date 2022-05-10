@@ -2,12 +2,8 @@
 # tasks file for webrole1
 - name: istall webserver
   apt: 
-    name: apache2
+    name: "{{myubuntuvar}}"
     state: present
   notify: restartedwebserver  
 
-- name: install git 
-  apt:
-    name: git
-    state: present
-  notify: restartedwebserver  
+
