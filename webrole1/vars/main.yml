@@ -2,3 +2,5 @@
 # vars file for webrole1
 myvar: value
 myubuntuvar: apache2
+myubuntuvar1: git
+

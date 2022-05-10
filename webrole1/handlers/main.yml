@@ -5,4 +5,10 @@
      name: "{{myubuntuvar}}"
      state: restarted
 
+- name: restartedwebserver
+  service:
+     name: "{{myubuntuvar1}}"
+     state: restarted
+
+
 

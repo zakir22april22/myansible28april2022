@@ -4,6 +4,12 @@
   apt: 
     name: "{{myubuntuvar}}"
     state: present
-  notify: restartedwebserver  
+  notify: restartedwebserver
+
+- name: istall git
+  apt: 
+    name: "{{myubuntuvar1}}"
+    state: present
+  notify: restartedwebserver    
 
 
