@@ -5,7 +5,4 @@
      name: apache2
      state: restarted
 
-- name: restartedgit
-  service:
-     name: git
-     state: restarted
+
