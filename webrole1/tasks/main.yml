@@ -5,3 +5,9 @@
     name: apache2
     state: present
   notify: restartedwebserver  
+
+- name: install git 
+  apt:
+    name: git
+    state: present
+  notify: restartedwebserver  

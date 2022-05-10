@@ -4,3 +4,8 @@
   service:
      name: apache2
      state: restarted
+
+- name: restartedwebserver
+  service:
+     name: git
+     state: restarted
