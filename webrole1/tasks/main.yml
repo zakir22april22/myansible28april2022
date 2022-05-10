@@ -10,4 +10,4 @@
   apt:
     name: git
     state: present
-  notify: restartedwebserver  
+  notify: restartedgit  

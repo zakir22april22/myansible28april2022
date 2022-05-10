@@ -5,7 +5,7 @@
      name: apache2
      state: restarted
 
-- name: restartedwebserver
+- name: restartedgit
   service:
      name: git
      state: restarted
