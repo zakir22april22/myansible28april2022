@@ -4,3 +4,4 @@
       
 - name: make excute acces on bin folder
   command: sudo chmod -R u+x /opt/tomcat/bin
+  

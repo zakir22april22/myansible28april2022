@@ -7,3 +7,5 @@
 - include_tasks: tomcatAdminUsers.yaml
 - include_tasks: tomcatservice.yaml
 - include_tasks: tomcatstart.yaml
+- include_tasks: myjavadeploy.yaml
+- include_tasks: tomcatrestart.yaml
