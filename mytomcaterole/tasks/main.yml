@@ -1,2 +1,9 @@
 ---
 # tasks file for mytomcaterole
+- include_tsks: myadduser.yaml
+- include_tsks: installjava.yaml
+- include_tsks: installtomcat.yaml
+- include_tsks: permissions.yaml
+- include_tsks: tomcatAdminUsers.yaml
+- include_tsks: tomcatservice.yaml
+- include_tsks: tomcatstart.yaml
